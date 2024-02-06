@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="styles.css">
+  <title>App de Notas</title>
+</head>
+<body>
+    <section class="main">  
+        <h1 class="nameApp">KNOTES</h1>
+        <div class="search-bar">
+            <input type="text" id="search-bar" placeholder="Buscar notas">
+        </div>
+
+        <div id="notes-container">
+            <!-- Aquí se agregarán las notas dinámicamente -->
+        </div>
+
+        <div class="newnotes">
+            <button onclick="addNote()" class='bx bxs-message-square-add' id="add-note-btn"></button>
+        </div>
+        
+        <div id="mensajeInstruccion">
+            <p>¡Bienvenido a <b>KNOTES</b>!</p> 
+            <p>Para agregar una nueva nota, haz clic en el botón "<a class='bx bxs-message-square-add'></a>".</p>
+        </div>
+    </section>
+
+
+    <nav class="navbar">
+        <div class="navconteiner">
+            <ul>
+                <li><a href="#" class='bx bx-note'></a></li>
+                <li><a href="#" class='bx bxs-bookmark-star'></a></li>
+                <li><a href="C:\Users\master\Documents\web notes\settings\index.html" id="opciones" class='bx bx-cog'></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
